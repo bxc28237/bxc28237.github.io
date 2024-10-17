@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-wdith, initial-scale" />
+        <title>Document</title>
+        <style>
+            body{
+                background-color: rgb(83, 0, 128);
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            main {
+                margin: 0 auto;
+                background-color: white;
+                max-width: 900px;
+                min-height: 300px;
+                padding: 1em;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+                border: 1px solid black;
+                padding: 1em;
+            }
+            .desc{
+                width: 60%;
+            }
+            @media screen and (max-width: 600px) {
+                .row {
+                    flex-direction: column-reverse;
+                }
+                .desc {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <!--ROW-->
+            <div id="feature1" class="row">
+                <div><img src="https://placehold.co/600x400" /></div>
+                <div>
+                    <h3>Title 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas nobis vero itaque numquam quaerat at recusandae tempora cupiditate ipsam! Dignissimos nobis ab eligendi velit autem, mollitia itaque aliquam at!
+                    </p>
+                </div>
+            </div>
+            <!--ROW-->
+           <!--ROW-->
+            <div id="feature2" class="row">
+                <div><img src="https://placehold.co/600x400" /></div>
+                <div>
+                    <h3>Title 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas nobis vero itaque numquam quaerat at recusandae tempora cupiditate ipsam! Dignissimos nobis ab eligendi velit autem, mollitia itaque aliquam at!
+                    </p>
+                </div>
+            </div>
+            <!--ROW-->
+           <!--ROW-->
+            <div id="feature3" class="row">
+                <div><img src="https://placehold.co/600x400" /></div>
+                <div>
+                    <h3>Title 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam voluptas nobis vero itaque numquam quaerat at recusandae tempora cupiditate ipsam! Dignissimos nobis ab eligendi velit autem, mollitia itaque aliquam at!
+                    </p>
+                </div>
+            </div>
+            <!--ROW-->
+        </main>
+    </body>
+</html>

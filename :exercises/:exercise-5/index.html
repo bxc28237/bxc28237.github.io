@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-wdith, initial-scale" />
+        <title>Document</title>
+        <style>
+            body{
+                background-color: rgb(83, 0, 128);
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            main {
+                margin: 0 auto;
+                background-color: white;
+                max-width: 900px;
+                min-height: 300px;
+                padding: 1em;
+            }
+            #content{
+                background-color: rgb(198, 160, 221);
+            }
+            @media screen and (max-width: 600px) {
+                #content {
+                    background-color: lavender;
+                    width: 100%;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: rgb(162, 88, 202);
+                }
+                main {
+                    color: rgb(83, 0, 128);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Ravioli</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est nisi, pretium non hendrerit ut, 
+                dictum id sapien. Etiam mattis ante ac nisi lobortis, ut condimentum diam placerat. Integer 
+                suscipit rutrum ex, sed blandit nibh malesuada a. Cras posuere sem nunc, ultricies convallis 
+                libero consectetur at. Vivamus volutpat ligula sed justo accumsan porttitor.
+            </p>
+            <div id="content">
+                <h2>Content</h2>
+                <img src="https://placehold.co/600x400" />
+            </div>
+        </main>
+    </body>
+</html>
