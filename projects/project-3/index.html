@@ -4,8 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice in Wonderland</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #AD8ACF;
+            padding: 10px;
+            position: relative;
+            display: flex;
+            justify-content: flex-end; /* Align the nav links to the right */
+        }
+
+        /* Style the links in the nav bar */
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px; /* Add spacing between the links */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        /* Hide the links when in mobile view */
+        .nav-links.responsive {
+            display: block;
+            position: absolute;
+            top: 60px; /* Adjust based on navbar height */
+            right: 10px;
+            background-color: #AD8ACF;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .nav-links.responsive li {
+            margin: 10px 0;
+        }
+
+        .nav-links li a:hover {
+            background-color: #AD8ACF;
+            color: white;
+        }
+
+        /* Hamburger menu icon */
+        .hamburger {
+            display: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* When screen size is small, show the hamburger menu */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .nav-links.responsive {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+    <nav>
+        <!-- Hamburger icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon symbol -->
+        </div>
+
+        <!-- Navigation links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About the Book</a></li>
+            <li><a href="#">Ratings & Reviews</a></li>
+            <li><a href="#">Author Info</a></li>
+            <li><a href="#">Purchase</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // JavaScript function to toggle the menu
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('responsive');
+        }
+    </script>
+
 </body>
 </html>
