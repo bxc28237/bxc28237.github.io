@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: black;
+            
         }
         nav {
             background-color: #AD8ACF;
@@ -85,6 +86,32 @@
                 display: block;
             }
         }
+        .hook {
+            font-size: 50px; 
+            font-family: Copperplate;          
+            color: #F7E5B5;
+            text-align: center;
+            padding: 20px;
+        }
+        .purchaselink {
+            font-size: 30px; 
+            font-family: Copperplate;          
+            color: #AD8ACF;
+            text-align: center;
+            padding: 10px;
+        }
+        .purchaselink li a:hover {
+            color: white;
+        }
+        .image-container {
+            display: flex;                  
+            justify-content: space-between; 
+            align-items: center;            
+        }
+
+        img {
+            width: 45%; 
+        }
     </style>
 </head>
 <body>
@@ -101,7 +128,14 @@
             <li><a href="purchase.html">Purchase</a></li>
         </ul>
     </nav>
-
+    <p class="hook">Jump Down the Rabbit Hole into Wonderland</p>
+    <ul class="purchaselink" id="navLink">
+        <li><a href="purchase.html">Buy Now</a></li>
+    </ul>
+    <div class="image-container">
+        <img src="Web_Design_p3_alice.png" alt="Image 1">
+        <img src="Web_Design_p3_rabbit.png" alt="Image 2">
+    </div>
     <script>
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
