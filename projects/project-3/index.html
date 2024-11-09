@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alice in Wonderland</title>
     <style>
-        /* Basic styling for the body */
         body {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', serif;
             margin: 0;
             padding: 0;
             background-color: black;
         }
-
-        /* Styling for the navigation bar */
         nav {
             background-color: #AD8ACF;
             padding: 10px;
             position: relative;
             display: flex;
-            justify-content: flex-end; /* Align the nav links to the right */
+            justify-content: flex-end;
         }
-
-        /* Style the links in the nav bar */
+        .navbar-title {
+            font-size: 24px; 
+            font-family: Copperplate;          
+            font-weight: bold;
+            margin-right: auto;
+        }
         .nav-links {
             list-style: none;
             margin: 0;
@@ -31,7 +32,7 @@
         }
 
         .nav-links li {
-            margin-left: 20px; /* Add spacing between the links */
+            margin-left: 20px; 
         }
 
         .nav-links a {
@@ -41,11 +42,10 @@
             padding: 10px;
         }
 
-        /* Hide the links when in mobile view */
         .nav-links.responsive {
             display: block;
             position: absolute;
-            top: 60px; /* Adjust based on navbar height */
+            top: 60px;
             right: 10px;
             background-color: #AD8ACF;
             width: 100%;
@@ -62,7 +62,6 @@
             color: white;
         }
 
-        /* Hamburger menu icon */
         .hamburger {
             display: none;
             font-size: 30px;
@@ -70,7 +69,6 @@
             cursor: pointer;
         }
 
-        /* When screen size is small, show the hamburger menu */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -90,14 +88,11 @@
     </style>
 </head>
 <body>
-
     <nav>
-        <!-- Hamburger icon -->
+        <div class="navbar-title">Alice in Wonderland</div>
         <div class="hamburger" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger icon symbol -->
+            &#9776; 
         </div>
-
-        <!-- Navigation links -->
         <ul class="nav-links" id="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">About the Book</a></li>
@@ -108,7 +103,6 @@
     </nav>
 
     <script>
-        // JavaScript function to toggle the menu
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
             navLinks.classList.toggle('responsive');
