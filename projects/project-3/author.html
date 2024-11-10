@@ -85,6 +85,69 @@
                 display: block;
             }
         }
+        .header {
+            font-size: 50px; 
+            font-family: Copperplate;          
+            color: #F7E5B5;
+            text-align: left;
+            padding: 20px;
+        }
+        .text {
+            font-family: 'Times New Roman', Times, serif;
+            color: #F7E5B5;
+            padding: 0em 1em 0em 20px;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;  /* Align items to the top */
+            justify-content: flex-start;
+        }
+
+        .text {
+            flex: 1; 
+            margin-right: 20px;
+        }
+
+        .image {
+            width: 400px; 
+            height: auto;
+            padding-right: 20px;
+            border-color:#AD8ACF;
+            border: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;  
+                align-items: center;   
+            }
+
+            .text {
+                margin-right: 0; 
+                margin-bottom: 20px; 
+            }
+
+            .image {
+                width: 100%;  
+                max-width: 300px; 
+            }
+        }
+        .heading {
+            display: flex;
+            align-items: flex-start;  /* Align items to the top */
+            justify-content: flex-start;
+        }
+
+        .header {
+            flex: 1; 
+            margin-right: 20px;
+        }
+
+        .flowers {
+            width: 300px; 
+            height: auto;
+            padding-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -101,7 +164,20 @@
             <li><a href="purchase.html">Purchase</a></li>
         </ul>
     </nav>
-
+    <div class="heading">
+    <p class="header">Lewis Carroll</p>
+    <img src="Web_Design_p3_flowers.png" alt="flowers" class="flowers">
+    </div>
+    <div class="container">
+        <div class="text">
+            <p>Lewis Carroll was the pen name of Charles Lutwidge Dodgson, a renowned English writer, mathematician, logician, and photographer. He was born on January 27, 1832, in Daresbury, Cheshire, England, and passed away on January 14, 1898, in Guildford, Surrey, England. Carroll is best known for his imaginative literary works, particularly "Alice's Adventures in Wonderland" and its sequel, "Through the Looking-Glass." </p>
+            <p>Dodgson was the eldest son in a family of eleven children. He displayed an early aptitude for mathematics and showed great promise in the subject. In 1851, he enrolled at Oxford University's Christ Church, where he eventually became a mathematical lecturer and remained closely associated with the institution for the rest of his life. </p>
+            <p>It was during Dodgson's time at Oxford that he began developing the stories that would later become "Alice's Adventures in Wonderland." In 1862, while on a boating trip with the Liddell family, Dodgson told a tale to entertain the children, including Alice Liddell. Encouraged by the positive reception, he later expanded the story into a manuscript, and it was published in 1865 under the pseudonym Lewis Carroll. The book's whimsical characters, imaginative plot, and clever wordplay made it an instant success and a beloved classic of children's literature. </p>
+            <p>Following the success of "Alice's Adventures in Wonderland," Carroll published "Through the Looking-Glass" in 1871, which continued the fantastical adventures of Alice. Both books garnered critical acclaim and have since become enduring classics, celebrated for their blend of fantasy, satire, and linguistic playfulness.</p>
+        </div>
+        <img src="800px-LewisCarrollSelfPhoto.jpg" alt="Lewis Carroll" class="image">
+    </div>
+    
     <script>
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');

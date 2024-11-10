@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pennsylvania's Attractions</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image next to paragraph</title>
     <style>
-        body{
-          margin: 0;
+        .container {
+            display: flex;
+            align-items: flex-start;  /* Aligns image and text at the top */
+        }
+        .image {
+            width: 100px;  /* Adjust the image size as needed */
+            height: auto;
+            margin-right: 15px;  /* Space between the image and text */
         }
     </style>
 </head>
 <body>
+
+<div class="container">
+    <img src="image.jpg" alt="Sample Image" class="image">
+    <p>This is a paragraph of text. It will appear next to the image, and both the image and text will align properly.</p>
+</div>
+
 </body>
 </html>
