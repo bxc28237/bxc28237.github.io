@@ -85,6 +85,34 @@
                 display: block;
             }
         }
+        .heading {
+            display: flex;
+            align-items: flex-start;  
+            justify-content: flex-start;
+        }
+        .header {
+            flex: 1; 
+            margin-right: 20px;
+            font-size: 50px; 
+            font-family: Copperplate;          
+            color: #F7E5B5;
+            text-align: left;
+            padding: 20px;
+        }
+        .mushrooms {
+            width: 300px; 
+            height: auto;
+            padding-right: 20px;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #F7E5B5;
+        }
+        .h1 {
+            font-family: Copperplate;
+        }
     </style>
 </head>
 <body>
@@ -101,7 +129,22 @@
             <li><a href="purchase.html">Purchase</a></li>
         </ul>
     </nav>
-
+    <div class="heading">
+        <p class="header">Ratings & Reviews</p>
+        <img src="Web_Design_p3_mushrooms.png" alt="mushrooms" class="mushrooms">
+        </div>
+    <section>
+        <h1>★★★★★ A Timeless Masterpiece of Imagination</h1>
+        <p>Lewis Carroll's "Alice in Wonderland" is an enduring masterpiece that continues to captivate readers of all ages. From the moment Alice falls down the rabbit hole, readers are transported into a world filled with enchantment, absurdity, and profound philosophical undertones. Carroll's imaginative storytelling is unparalleled, creating a tapestry of vibrant characters and surreal landscapes. The Mad Hatter's tea party, the enigmatic Cheshire Cat, and the tyrannical Queen of Hearts are just a few of the iconic figures that populate...</p>
+    </section>
+    <section>
+        <h1>★★★★☆ A Captivating Journey into Wonderland</h1>
+        <p>"Alice in Wonderland" by Lewis Carroll is a whimsical and enchanting tale that takes readers on a delightful journey through a world of absurdity and imagination. Carroll's storytelling is incredibly imaginative, filled with quirky characters and nonsensical situations that will captivate readers of all ages. The protagonist, Alice, is a curious and adventurous young girl who finds herself tumbling down a rabbit hole into a topsy-turvy world. Throughout her encounters with peculiar creatures like the Cheshire Cat, the Mad Hatter, and the Queen...</p>
+    </section>
+    <section>
+        <h1>★★★☆☆ A Wonderland of Curiosities and Absurdities</h1>
+        <p>"Alice in Wonderland" by Lewis Carroll is a peculiar and bewildering tale that will either enchant or frustrate readers. Carroll's vivid descriptions and imaginative world-building are commendable, but the lack of a cohesive plot may leave some readers feeling disoriented. The story follows young Alice as she falls down a rabbit hole into a whimsical land populated by talking animals, eccentric characters, and nonsensical riddles. While the imaginative elements and clever wordplay are entertaining, the narrative often meanders without a clear...</p>
+    </section>
     <script>
         function toggleMenu() {
             const navLinks = document.getElementById('navLinks');
