@@ -85,6 +85,57 @@
                 display: block;
             }
         }
+        .header {
+            font-size: 50px; 
+            font-family: Copperplate;          
+            color: #F7E5B5;
+            text-align: right;
+            padding: 20px;
+        }
+        .text {
+            font-family: 'Times New Roman', Times, serif;
+            color: #F7E5B5;
+            padding: 0em 1em 0em 20px;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start; 
+            justify-content: flex-start;
+        }
+
+        .text {
+            flex: 1; 
+            margin-right: 20px;
+        }
+
+        .image {
+            width: 400px; 
+            height: auto;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;  
+                align-items: center;   
+            }
+
+            .text {
+                margin-right: 0; 
+                margin-bottom: 20px; 
+            }
+
+            .image {
+                width: 100%;  
+                max-width: 300px; 
+            }
+        }
+        .roses {
+            width: 300px; 
+            height: auto;
+            padding-right: 20px;
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -101,6 +152,14 @@
             <li><a href="purchase.html">Purchase</a></li>
         </ul>
     </nav>
+    <p class="header">About the Book</p>
+    <div class="container">
+        <img src="alice in wonderland.jpg" alt="Book" class="image">
+        <div class="text">
+            <p>In "Alice in Wonderland," young Alice follows a white rabbit down a rabbit hole and finds herself in a peculiar and enchanting world called Wonderland. Throughout her journey, she encounters a series of eccentric and whimsical characters, such as the Cheshire Cat, the Mad Hatter, and the Queen of Hearts. Alice navigates through a topsy-turvy realm where logic is often turned upside down, and nothing is as it seems. As she tries to make sense of this extraordinary world and find her way back home, Alice embarks on a delightful and sometimes bewildering adventure, filled with curious encounters and thought-provoking riddles. Along the way, she learns valuable lessons about identity, imagination, and the power of embracing one's curiosity.</p>
+            <img src="Web_Design_p3_roses.png" alt="roses" class="roses">
+        </div>
+    </div>
 
     <script>
         function toggleMenu() {
