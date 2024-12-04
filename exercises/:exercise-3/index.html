@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image next to paragraph</title>
-    <style>
-        .container {
-            display: flex;
-            align-items: flex-start;  /* Aligns image and text at the top */
-        }
-        .image {
-            width: 100px;  /* Adjust the image size as needed */
-            height: auto;
-            margin-right: 15px;  /* Space between the image and text */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Columns and 5 Rows Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: repeat(5, 1fr); 
+      gap: 20px; 
+      padding: 20px;
+    }
+
+    .item {
+      background-color: #b199cb;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; 
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <img src="image.jpg" alt="Sample Image" class="image">
-    <p>This is a paragraph of text. It will appear next to the image, and both the image and text will align properly.</p>
-</div>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">6</div>
+
+    <div class="item">2</div>
+    <div class="item">7</div>
+
+    <div class="item">3</div>
+    <div class="item">8</div>
+
+    <div class="item">4</div>
+    <div class="item">9</div>
+
+    <div class="item">5</div>
+    <div class="item">10</div>
+  </div>
 
 </body>
 </html>
