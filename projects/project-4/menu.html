@@ -5,6 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+   .title {
+            font-size: 32px;    
+            color: #632D15;  
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif
+   }
+   .subtitle {
+            font-size: 50px;    
+            color: #632D15;  
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+   }
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu-section {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #80AD70;
+    border-radius: 8px;
+    text-align: center;
+    margin: 5px;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #80AD70;
+}
+
+.menu-section p {
+    font-size: 16px;
+    color: #632D15;
+    margin-bottom: 15px;
+}
+
+.menu-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+
+.food-name {
+    font-size: 18px;
+    color: #632D15;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.food-price {
+    font-size: 18px;
+    color: #80AD70;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-section {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+    </style>
 </head>
 <body>
     <div class="bnblogo">
@@ -26,7 +119,202 @@
             <div class="bar"></div>
         </div>
     </nav>
-
+    <h1 class="title">Brews and Bonds</h1>
+    <h1 class="subtitle">Menu</h1>
+    <div class="menu-container">
+        <div class="menu-section">
+            <h2>Tea</h2>
+            <div class="menu-item">
+                <span class="food-name">Herbal Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Iced Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Earl Grey</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">English Breakfast</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Green Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Jasmine Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Chamomile Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Peppermint Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Rooibos Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Matcha Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Oolong Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">White Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Herbal Blend</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Chai Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Darjeeling Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Assam Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Sencha Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Genmaicha Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Pu-erh Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Lemon Verbana Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Mint Tea</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Berry Infusion</span>
+                <span class="food-price">$4.99</span>
+            </div>
+            <img src="tea.jpg" alt="Image 1">
+        </div>
+        <div class="menu-section">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <span class="food-name">Espresso</span>
+                <span class="food-price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Americano</span>
+                <span class="food-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Latte</span>
+                <span class="food-price">$4.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Cappuccino</span>
+                <span class="food-price">$4.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Mocha</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Macchiato</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Flat White</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Iced Coffee</span>
+                <span class="food-price">$4.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Cold Brew</span>
+                <span class="food-price">$4.59</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Frappuccino</span>
+                <span class="food-price">$5.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Hot Chocolate</span>
+                <span class="food-price">$3.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Chai Tea Latte</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Matcha Latter</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Smoothie</span>
+                <span class="food-price">$5.00</span>
+            </div>
+            <img src="coffee.jpg" alt="Image 2">
+        </div>
+        <div class="menu-section">
+            <h2>Food</h2>
+            <div class="menu-item">
+                <span class="food-name">Croissant</span>
+                <span class="food-price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Bagel</span>
+                <span class="food-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Muffin</span>
+                <span class="food-price">$2.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Scone</span>
+                <span class="food-price">$3.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Sandwich</span>
+                <span class="food-price">$6.00</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Salad</span>
+                <span class="food-price">$7.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Quiche</span>
+                <span class="food-price">$5.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Soup of the Day</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <div class="menu-item">
+                <span class="food-name">Fruit Parfait</span>
+                <span class="food-price">$4.50</span>
+            </div>
+            <img src="muffin.jpg" alt="Image 2">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
