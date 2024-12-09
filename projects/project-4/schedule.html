@@ -23,6 +23,54 @@
             align-items: center;
             text-align: center;
    }
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #F7F5E9;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .day-schedule {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 5px solid #80AD70;
+
+        }
+
+        .day-schedule h2 {
+            font-size: 28px;
+            color: #80AD70;
+        }
+
+        .event {
+            margin-bottom: 15px;
+        }
+
+        .event p {
+            font-size: 16px;
+            color: #632D15;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .event-time {
+            font-weight: bold;
+            color: #632D15;
+        }
+
+        .event-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #80AD70;
+        }
     </style>
 </head>
 <body>
@@ -47,6 +95,87 @@
     </nav>
     <h1 class="title">Brews & Bonds</h1>
     <h1 class="subtitle">Schedule</h1>
+    <div class="container">
+        <div class="day-schedule">
+            <h2>Monday</h2>
+            <div class="event">
+                <span class="event-title">Morning Yoga Class</span>
+                <p>Start your week with a relaxing yoga session. <span class="event-time">(8:00 AM - 9:00 AM)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Live Acoustic Music</span>
+                <p>Enjoy soulful acoustic performances by local artists. <span class="event-time">(7:00 PM - 9:00 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Tuesday</h2>
+            <div class="event">
+                <span class="event-title">Coffee Tasting Workshop</span>
+                <p>Learn about different coffee brewing methods and taste various specialty coffees. <span class="event-time">(6:00 PM - 7:30 PM)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Open Mic Night</span>
+                <p>Showcase your talent or enjoy the performances of local musicians, poets, and comedians. <span class="event-time">(8:00 PM - 10:00 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Wednesday</h2>
+            <div class="event">
+                <span class="event-title">Art Exhibition</span>
+                <p>Explore the works of local artists displayed throughout the coffee shop. <span class="event-time">(All day)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Trivia Night</span>
+                <p>Test your knowledge and compete with friends in a fun-filled trivia competition. <span class="event-time">(7:00 PM - 9:00 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Thursday</h2>
+            <div class="event">
+                <span class="event-title">Cooking Class</span>
+                <p>Join our skilled chef and learn to prepare delicious desserts. Limited spots available, reservations required. <span class="event-time">(5:00 PM - 7:00 PM)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Board Game Night</span>
+                <p>Gather with friends and enjoy a variety of board games while sipping your favorite drinks. <span class="event-time">(6:00 PM - 9:00 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Friday</h2>
+            <div class="event">
+                <span class="event-title">Live Jazz Band</span>
+                <p>Relax and unwind with the smooth tunes of a live jazz band. <span class="event-time">(7:30 PM - 9:30 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Saturday</h2>
+            <div class="event">
+                <span class="event-title">Family Day</span>
+                <p>Bring your kids for a special day of face painting, storytelling, and fun activities. <span class="event-time">(10:00 AM - 12:00 PM)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Poetry Slam</span>
+                <p>Express your creativity or listen to passionate poets share their work during our poetry slam event. <span class="event-time">(7:00 PM - 9:00 PM)</span></p>
+            </div>
+        </div>
+
+        <div class="day-schedule">
+            <h2>Sunday</h2>
+            <div class="event">
+                <span class="event-title">Book Club Meeting</span>
+                <p>Discuss the latest book selection with fellow book enthusiasts over a cup of coffee. <span class="event-time">(3:00 PM - 4:30 PM)</span></p>
+            </div>
+            <div class="event">
+                <span class="event-title">Sunday Brunch</span>
+                <p>Indulge in a delicious brunch menu accompanied by live acoustic music. <span class="event-time">(10:00 AM - 2:00 PM)</span></p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
