@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brew's and Bonds</title>
+    <title>Brews and Bonds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+        }
+
+        .container {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-half {
+            flex: 1;
+            background-image: url('coffee-beans.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bottom-half {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F7F5E9;
+            padding: 20px;
+        }
+
+        .bottom-half h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #632D15;
+        }
+
+        .bottom-half h2 {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #632D15;
+        }
+        .bottom-half h3 {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #80AD70;
+        }
+        .logo {
+            width: 200px;
+            border-radius: 50%;
+            position: fixed;
+            top: 39.5%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 2;
+        }
+        .logobg {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            border: 7px solid #80AD70;
+            position: fixed;
+            top: 38%; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            z-index: 1;
+        }
+        .links {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #632D15;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .links a:hover {
+            color: #80AD70;
+        }
+
+        @media (max-width: 768px) {
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .links a {
+                margin-bottom: 15px;
+            }
+
+            .bottom-half h1 {
+                font-size: 2em;
+                margin-top: 50px;
+            }
+
+            .bottom-half h2 {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+
+    <div class="container">
+        <div class="top-half"></div>
+        <div class="logo">
+            <img src="BrewsandBondslogo.png" class="logo">
+        </div>
+        <div class="logobg"></div>
+        <div class="bottom-half">
+            <h1>Brews and Bonds</h1>
+            <h2>Where every cup feels like home</h2>
+            <h3>Take a look at the menu or check out our weekly events!</h3>
+            <div class="links">
+                <a href="#menu">Menu</a>
+                <a href="#our-story">Our Story</a>
+                <a href="#schedule">Schedule</a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
