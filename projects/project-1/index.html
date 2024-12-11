@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Image Banner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      background-color: #C8D4B9;
+      background-image: url('leaves.png');
+    }
+
+    .banner {
+      width: 100%;
+      height: 300px; 
+      background-image: url('PaAttractionsBanner.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 20px;
+      border: 3px solid #103D0F;
+    }
+
+    .banner p {
+      font-size: 36px;
+      font-weight: bold;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      gap: 20px;
+      width: 80%;
+      max-width: 1200px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: row; 
+      align-items: center; 
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      padding: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .image-box {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .text-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-box h3 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .text-box p {
+      font-size: 12px;
+      color: #555;
+      font-family:Georgia, 'Times New Roman', Times, serif
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .links {
+      font-family:Georgia, 'Times New Roman', Times, serif
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <p>Central Pennsylvania's Greatest Attractions</p>
+  </div>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_hershey.png" alt="Image 1">
+      </div>
+      <div class="text-box">
+        <h3>Hersheypark</h3>
+        <p>A renowned amusement park featuring exciting rides, live entertainment, and an opportunity to learn about chocolate-making at Hershey's Chocolate World.</p>
+        <li><a href="https://www.hersheypark.com/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_gettysburg.png" alt="Image 2">
+      </div>
+      <div class="text-box">
+        <h3>Gettysburg National Military Park</h3>
+        <p>Site of the pivotal Battle of Gettysburg during the Civil War, offering guided tours, historic monuments, and a visitor center with exhibits.</p>
+        <li><a href="https://www.nps.gov/gett/index.htm" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_capitol.png" alt="Image 3">
+      </div>
+      <div class="text-box">
+        <h3>Pennsylvania State Capitol</h3>
+        <p>An impressive architectural gem in Harrisburg showcasing exquisite artwork, stunning interiors, and guided tours to learn about the state's government and history.</p>
+        <li><a href="http://www.pacapitol.com/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_raystownlake.png" alt="Image 4">
+      </div>
+      <div class="text-box">
+        <h3>Raystown Lake</h3>
+        <p>A scenic reservoir near Huntingdon, offering boating, fishing, hiking, and camping amid picturesque landscapes and water activities.</p>
+        <li><a href="https://raystown.org/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_railroad.png" alt="Image 5">
+      </div>
+      <div class="text-box">
+        <h3>Railroad Museum of Pennsylvania</h3>
+        <p>Located in Strasburg, this museum boasts an extensive collection of vintage locomotives, rail cars, and exhibits, showcasing the rich history of railroading.</p>
+        <li><a href="https://www.rrmuseumpa.org/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_york.png" alt="Image 6">
+      </div>
+      <div class="text-box">
+        <h3>Central Market of York</h3>
+        <p>The oldest continuously operating farmers' market in the U.S., offering a bustling atmosphere, local produce, crafts, and diverse food vendors.</p>
+        <li><a href="https://www.centralmarketyork.com/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_pinegrove.png" alt="Image 7">
+      </div>
+      <div class="text-box">
+        <h3>Pine Grove Furnace State Park</h3>
+        <p>Serving as the "Gateway to the Appalachian Trail," this park offers hiking, picnicking, and swimming opportunities, along with historic features and natural beauty.</p>
+        <li><a href="https://www.dcnr.pa.gov/StateParks/FindAPark/PineGroveFurnaceStatePark/Pages/default.aspx" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_worldends.png" alt="Image 8">
+      </div>
+      <div class="text-box">
+        <h3>Worlds End State Park</h3>
+        <p>Situated in the Endless Mountains, this park is known for its rugged beauty, with hiking trails, waterfalls, and breathtaking views of the Loyalsock Creek Gorge.</p>
+        <li><a href="https://www.dcnr.pa.gov/StateParks/FindAPark/WorldsEndStatePark/pages/default.aspx" class="links">Visit Site</a></li>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_lewistown.png" alt="Image 9">
+      </div>
+      <div class="text-box">
+        <h3>Lewisburg</h3>
+        <p>A charming small town known for its historic downtown, offering boutique shops, galleries, and restaurants, as well as attractions like the Lewisburg Farmers Market and Packwood House Museum.</p>
+        <li><a href="https://www.lewisburgborough.org/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="image-box">
+        <img src="project1_pagrandcanyon.png" alt="Image 8">
+      </div>
+      <div class="text-box">
+        <h3>The Pennsylvania Grand Canyon</h3>
+        <p>Also known as Pine Creek Gorge, this natural wonder features stunning vistas, hiking trails, and opportunities for outdoor recreation.</p>
+        <li><a href="https://pacanyon.com/" class="links">Visit Site</a></li>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
