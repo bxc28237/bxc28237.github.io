@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easyl | Sign Up</title>
+    <link rel="icon" href="favicon-1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon-1.png" type="image/x-icon">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-logo {
+    height: 400px; 
+    width: auto;
+    align-items: left;
+    padding-right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('ART114_P1_Banner.png');
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-container {
+    background-color: #1E1E1E;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    color: #FECB77;
+    font-family: 'Merriweather';
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #FECB77;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Merriweather'
+}
+
+form button:hover {
+    background-color: #A15A55;
+}
+
+#error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <img src="project1_socialmedia_logo.png" alt="Logo" class="nav-logo">
+    <div class="container">
+        <div class="form-container">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign Up</button>
+                <p id="error-message" style="color: red; display: none;">Please fill in all fields correctly!</p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+       document.getElementById('signupForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const errorMessage = document.getElementById('error-message');
+
+    if (username && email && password) {
+        window.location.href = 'feedpage.html'; 
+    } else {
+        errorMessage.style.display = 'block';
+    }
+});
+
+    </script>
+</body>
+</html>
