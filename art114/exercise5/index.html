@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script>
+        // Function to perform the addition
+        function calculateSum() {
+            // Get the values from the input fields
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            
+            // Check if both values are numbers
+            if (isNaN(num1) || isNaN(num2)) {
+                alert('Please enter valid numbers.');
+            } else {
+                // Calculate the sum and display it
+                var sum = num1 + num2;
+                document.getElementById('result').innerHTML = 'Sum: ' + sum;
+            }
+        }
+        function changeColor() {
+            // Change the background color
+            document.body.style.backgroundColor = "black"; 
+            
+            // Change the text color
+            document.body.style.color = "white"; 
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Exercise 5</h1>
+    
+    <!-- Input fields for numbers -->
+    <label for="num1"></label>
+    <input type="text" id="num1" required><br><br>
+    
+    <label for="num2">+</label>
+    <input type="text" id="num2" required><br><br>
+    
+    <!-- Button to trigger calculation -->
+    <button onclick="calculateSum()">Calculate</button>
+    
+    <!-- Area to display the result -->
+    <p id="result"></p>
+    <button onclick="changeColor()">Change Colors</button>
+
+</body>
+</html>
