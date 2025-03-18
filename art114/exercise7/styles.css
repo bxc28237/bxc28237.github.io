@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  .animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    border-radius: 10px;
+    animation: MoveAndChangeColor 3s ease-in-out infinite;
+  }
+  
+  @keyframes MoveAndChangeColor {
+    0% {
+      transform: translateX(-300px); 
+      background-color: purple;   
+    }
+    50% {
+      transform: translateX(300px); 
+      background-color: green;   
+    }
+    100% {
+      transform: translateX(-300px); 
+      background-color: purple;   
+    }
+  }
+  
