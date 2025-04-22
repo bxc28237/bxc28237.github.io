@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 10</title>
+</head>
+<body>
+  <h1>Search for a Book</h1>
+  <input type="text" id="bookInput" placeholder="Enter a book title or author" />
+  <button id="bookSearchBtn">Search</button>
+  <div id="bookResult"></div>
+
+  <script>
+    document.getElementById("bookSearchBtn").addEventListener("click", () => {
+      const query = document.getElementById("bookInput").value.trim();
+      if (!query) {
+        document.getElementById("bookResult").innerHTML = "Please enter a search term.";
+        return;
+      }
+
+      const apiURL = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}`;
+
+      fetch(apiURL)
+        .then(response => response.json())
+        .then(data => {
+          if (data.docs && data.docs.length > 0) {
+            const book = data.docs[0];
+            const title = book.title || "No title";
+            const author = book.author_name ? book.author_name.join(", ") : "Unknown author";
+            const link = `https://openlibrary.org${book.key}`;
+
+            document.getElementById("bookResult").innerHTML = `
+              <h2>${title}</h2>
+              <p><strong>Author:</strong> ${author}</p>
+              <p><a href="${link}" target="_blank">View on Open Library</a></p>
+            `;
+          } else {
+            document.getElementById("bookResult").innerHTML = "No books found.";
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          document.getElementById("bookResult").innerHTML = "Failed to fetch book data.";
+        });
+    });
+  </script>
+</body>
+</html>
