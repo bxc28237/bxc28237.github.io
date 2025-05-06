@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Bailey Criss</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+.portfolio-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+.portfolio-section .main-header {
+    color: white;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.portfolio-item {
+  text-decoration: none;
+  color: #8A6FB8;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <a href="home.html">
+          <img src="images/BaileyCriss_logo.png" alt="Logo">
+        </a>
+      </div>
+    
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="portfolio.html">PORTFOLIO</a></li>
+      <li><a href="Bailey Criss Resume.pdf" target="_blank" rel="noopener">RESUME</a></li>
+    </ul>
+  </nav>
+
+  <section class="portfolio-section">
+    <h1 class="main-header">PORTFOLIO</h1>
+    <div class="portfolio-grid">
+
+      <a href="traditionalart.html" class="portfolio-item">
+        <img src="images/FruitBowl_Ink.png" alt="Traditional Art">
+        <h3>TRADITIONAL ART</h3>
+      </a>
+
+      <a href="digitalart.html" class="portfolio-item">
+        <img src="images/BaileyCriss_VectorSelfPortrait.png" alt="Digital Art">
+        <h3>DIGITAL ART</h3>
+      </a>
+
+      <a href="graphicdesign.html" class="portfolio-item">
+        <img src="images/BaileyCriss_GDIII_WineLabels_Final.png" alt="Graphic Design">
+        <h3>GRAPHIC DESIGN</h3>
+      </a>
+
+      <a href="photography.html" class="portfolio-item">
+        <img src="images/bailey3.jpg" alt="Photography">
+        <h3>PHOTOGRAPHY</h3>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Bailey Criss. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Bailey Criss</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <style>
+.contact-section {
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #D9D9D9;
+}
+
+.contact-section .main-header {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form .form-group {
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form button {
+  padding: 12px 24px;
+  background-color: #8A6FB8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form button:hover {
+  background-color: #3E3252;
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <a href="home.html">
+          <img src="images/BaileyCriss_logo.png" alt="Logo">
+        </a>
+      </div>
+    
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    
+    <ul class="nav-links" id="nav-links">
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="portfolio.html">PORTFOLIO</a></li>
+      <li><a href="Bailey Criss Resume.pdf" target="_blank" rel="noopener">RESUME</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h1 class="main-header">CONTACT</h1>
+
+    <form action="submit_form.php" method="POST" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="15" required></textarea>
+      </div>
+      <button type="submit" class="button">SUBMIT</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Bailey Criss. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
